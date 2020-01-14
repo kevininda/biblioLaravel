@@ -1,4 +1,4 @@
-<footer><p>Partido Justicialista Concordia     &copy;Inda Kevin 2020</p></footer>
+<footer><p>Partido Justicialista Concordia     &copy;Inda Kevin - Ramiro Nan 2020</p></footer>
 <style>
 
 footer{
