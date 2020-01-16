@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return  view('welcome');
+    $libros = App\Libro::all();
+    
+    return  view('welcome', compact('libros'));
 });
 
 Route::get('hola', function () {
