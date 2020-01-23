@@ -30,4 +30,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'firebase' => [
+        'api_key' => 'AIzaSyCAgk_URJPakI9OTzwyxs0YvGjbQT6_dx8',
+        'auth_domain' => 'biblioteca-41ba5.firebaseapp.com',
+        'database_url' => 'https://biblioteca-41ba5.firebaseio.com',
+        'secret' => 'V5G0Y0Cn267yfKK6cKRMOkg6bN0VSiRxl8ug0ify',
+        'storage_bucket' => 'biblioteca-41ba5.appspot.com',
+    ],
 ];
