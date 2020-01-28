@@ -17,8 +17,8 @@ Route::get('/', function () {
     return  view('welcome', compact('libros'));
 });
 
-Route::get('hola', function () {
-    return ('hola');
+Route::get('usuarios', function () {
+    return ('usuarios');
 });
 
 Route::get('footer', function () {
@@ -36,3 +36,12 @@ Route::get('login', function () {
 Route::get('menu', function () {
     return view('menu');
 });
+
+Route::get('libros', function () {
+    $libros = App\Libro::all();
+    
+    return  view('libros', compact('libros'));
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
