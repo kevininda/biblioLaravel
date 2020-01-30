@@ -12,9 +12,7 @@
 */
 
 Route::get('/', function () {
-    $libros = App\Libro::all();
-    
-    return  view('welcome', compact('libros'));
+    return view('menu');
 });
 
 Route::get('usuarios', function () {
@@ -39,9 +37,18 @@ Route::get('menu', function () {
 
 Route::get('libros', function () {
     $libros = App\Libro::all();
+    $autores = App\Autor::all();
     
     return  view('libros', compact('libros'));
 });
+
+
+Route::get('usuarios', function () {
+    $usuarios = App\Usuario::all();
+    
+    return  view('usuarios', compact('usuarios'));
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

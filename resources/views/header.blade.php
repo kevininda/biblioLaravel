@@ -29,10 +29,11 @@
               <a class="dropdown-item" href="{{url('/libros')}}">Todos</a>
                 <a class="dropdown-item" href="{{url('/prestados')}}">Prestados</a>
                 <a class="dropdown-item" href="{{url('/actuales')}}">Actuales</a>
+                <a class="dropdown-item" href="{{url('/actuales')}}">Agregar Libro</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{url('/usuarios')}}" tabindex="-1" aria-disabled="true">Usuarios</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{url('/login')}}" tabindex="-1" aria-disabled="true">Cerrar Sesion</a>
