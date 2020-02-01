@@ -39,7 +39,11 @@ Route::get('libros', function () {
     $libros = App\Libro::all();
     $autores = App\Autor::all();
     
+<<<<<<< HEAD
     return  view('libros', compact('libros'));
+=======
+    return  view('libros', compact('libros','autores'));
+>>>>>>> octavo git
 });
 
 

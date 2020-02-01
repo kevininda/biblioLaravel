@@ -20,6 +20,10 @@ class CreateLibrosTable extends Migration
             $table->string('nombre');
             $table->string('anio');
             $table->string('idAutor');
+<<<<<<< HEAD
+=======
+            $table->boolean('estado');
+>>>>>>> octavo git
         });
     }
 
